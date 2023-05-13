@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Box Example</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        /* Custom CSS */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid black;
+          }
+      
+          .header-info {
+            display: flex;
+            align-items: center;
+          }
+      
+          .header-info img {
+            width: 7%;
+            height: 7%;
+            margin-right: 10px;
+          }
+      
+          .header-info p {
+            margin: 0;
+          }
+      
+          .vertical-line {
+            border-left: 1px solid black;
+            height: 30px;
+            margin: 0 30px;
+
+          }
+      
+          .header-icons {
+            display: flex;
+            align-items: center;
+          }
+      
+          .header-icons img {
+            width: 100%;
+            height: 100%;
+            margin-right: 50px;
+          }
+      
+          @media (max-width: 576px) {
+            #header {
+              display: none;
+            }
+          }
+        .custom-box {
+            width: 1200px;
+            height: 550px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 2ex;
+            padding: 1px 20px;
+            top: -200px;
+            left: 50%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-bottom: 20px;
+            top: 50px;
+            
+            transform: translateX(-50%);
+        }
+       
+        .column{
+            padding:5px
+        }
+        .custom-column {
+            padding:  0px 50px; /* Adjust the value as needed */
+          }
+          @media (max-width: 767px){
+            .navbar-collapse {
+              position: fixed;
+              top: 0;
+              bottom: 0;
+              right: -100%;
+              width: 70%;
+              z-index: 100;
+              transition: right 0.3s ease-in-out;
+            }
+          }
+      
+            .navbar-collapse.show {
+              right: 0;
+            }
+            .bo{
+                background: url("main.png") no-repeat center center fixed;
+                background-size: 100% 100%;
+                width: 100vw;
+                height: 100vb;
+                justify-content: flex-end;
+              }
+    </style>
+</head>
+
+<body>
+    <div class="bo">
+        <header id="header">
+            <div class="header-info">
+            <img src="phone.jpg" alt="Phone">
+            <p>91 730 506 5008</p>
+            <div class="vertical-line"></div>
+            <img src="mail.jpg" alt="Email">
+            <p>care@jbrosinfras.com</p>
+            </div>
+            
+            <div class="header-icons">
+            <img src="facebook.jpg" alt="Image 1">
+            <img src="twitter.png" alt="Image 2">
+            <img src="whatsapp.png" alt="Image 3">
+            <img src="instagram.png" alt="Image 4">
+            <img src="linkedin.png" alt="Image 5">
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="" width="120px" height="120px" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><b style="color:black">HOME</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b style="color:rgba(209, 10, 10, 0.852)">ABOUT US</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b style="color:black">OUR PRODUCT</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b style="color:black">OUR SERVICES</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b style="color:black">CONTACT US</b></a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="custom-box">
+                        <div style="text-align: center">
+                            <h2><b><span style="color:red">ABOUT</span> US</b></h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div  class="column">
+                                    <p class="text-content" style="text-align: justify;">
+                                        <b style="font-size: 25px;">JBROS INFRAS</b>
+                                        <span style="font-size: 20px;" >is an Engineering and Construction firm with the capacity to execute infrastructure development projects in domestic, commercial, and industrial areas. We have a great team of seasoned experts and technicians capable of designing, executing, and building high-quality constructions on time.
+                                        <br > We also manufacture and supply strong and premium quality Fly Ash Bricks from our own factory.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div  class="column">
+                                <img src="carosal-1.png" style="height:275px "alt="">
+                            </div>
+                        </div>
+
+                        <div style="text-align: center">
+                            <h2><b><span style="font-size: 23px;">We Believe in</span></b></h2>
+                            <div class="row">
+                                <div class="custom-column">
+                                <img src="honest.png" alt="Image 1">
+                                <p class="centered-text"><b>Honest</b></p>
+                                </div>
+                                <div class="custom-column">
+                                <img src="dedication.jpg" alt="Image 2">
+                                <p class="centered-text"><b>Dedication</b></p>
+                                </div>
+                                <div class="custom-column">
+                                <img src="passion.jpg".jpg" alt="Image 3">
+                                <p class="centered-text"><b>Passion</b></p>
+                                </div>
+                                <div class="custom-column">
+                                <img src="perfection.jpg".jpg" alt="Image 4">
+                                <p class="centered-text"><b>Perfection</b></p>
+                                </div>
+                                <div class="custom-column">
+                                <img src="sprint.jpg".jpg" alt="Image 5">
+                                <p class="centered-text"><b>Sprint</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS (jQuery is required) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
