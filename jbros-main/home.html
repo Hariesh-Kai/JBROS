@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+   
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="autolayout-home">
+      <div class="frame-parent">
+        <div class="frame-group">
+          <div class="vector-parent">
+            <img class="vector-icon" alt="" src="./images/phone.png" />
+
+            <div class="div">
+              <div class="div1">+91 730 506 5008</div>
+            </div>
+            <img
+              class="communication-icon"
+              alt=""
+              src="./images/communication.png"
+            />
+
+            <img class="vector-icon1" alt="" src="./images/message.png" />
+
+            <div class="jbrosinfrasgmailcom">
+              <div class="div1">care@jbrosinfras.com</div>
+            </div>
+          </div>
+          <div class="iconfacebook-parent">
+            <img class="iconfacebook" alt="" src="./images/facebook.png" />
+
+            <img class="icontwitter" alt="" src="./images/twitter.png" />
+
+            <img
+              class="iconinstagram"
+              alt=""
+              src="./images/instagram.png"
+            />
+
+            <img class="iconlinkedin" alt="" src="./images/linkedin.png" />
+
+            <img class="iconwhatsapp" alt="" src="./images/whatsapp.png" />
+          </div>
+        </div>
+        <div class="frame-child"></div>
+      </div>
+      <div class="frame-container">
+        <img class="frame-item" alt="" src="./images/icon.png" />
+
+        <div class="home-parent">
+          <div class="home">
+            <b class="div1" >HOME</b>
+          </div>
+          <div class="about-us" id="aBOUTUSContainer">
+            <b class="div1" >ABOUT US</b>
+          </div>
+          <div class="our-product" id="oURPRODUCTContainer">
+            <b class="div1">OUR PRODUCT</b>
+          </div>
+          <div class="our-services" id="oURSERVICESContainer">
+            <b class="div1" href=>OUR SERVICES</b>
+          </div>
+          <div class="contact-us" id="cONTACTUSContainer">
+            <b class="div1">CONTACT US</b>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="we-shape-our">
+        We shape our buildings; there after, they shape us.
+      </div>
+      <div class="component-2">
+        <b class="we">We</b>
+        <div class="make-design-shape-build-wrapper">
+          <b class="make-design-shape-container">
+            <p class="make">Make</p>
+            <p class="make">Design</p>
+            <p class="make">Shape</p>
+            <p class="make">Build</p>
+          </b>
+        </div>
+      </div>
+      
+       
+    </div>
+    
+
+    <script>
+      var aBOUTUSContainer = document.getElementById("aBOUTUSContainer");
+      if (aBOUTUSContainer) {
+        aBOUTUSContainer.addEventListener("click",()=> {
+          document.location.href="./about.html"
+          
+        });
+      }
+      
+      var oURPRODUCTContainer = document.getElementById("oURPRODUCTContainer");
+      if (oURPRODUCTContainer) {
+        oURPRODUCTContainer.addEventListener("click", ()=> {
+          document.location.href="./ourproduct.html"
+          
+        });
+      }
+      var oURSERVICESContainer = document.getElementById("oURSERVICESContainer");
+      if (oURSERVICESContainer) {
+        oURSERVICESContainer.addEventListener("click",()=> {
+          document.location.href="./ourservice.html"
+          
+        });
+      }
+      
+      var cONTACTUSContainer = document.getElementById("cONTACTUSContainer");
+      if (cONTACTUSContainer) {
+        cONTACTUSContainer.addEventListener("click", function (e) {
+          //////////////////contact page////////////////////////
+        });
+      }
+      </script>
+  </body>
+</html>
